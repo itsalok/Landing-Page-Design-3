@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link href="//db.onlinewebfonts.com/c/b739b9bc437e5b643a79d7120bf5aec7?family=Neutronica" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/navbar.css">
+</head>
+
+<body>
+    <div class="nav-right visible-xs">
+        <div class="button" id="btn">
+            <div class="bar top"></div>
+            <div class="bar middle"></div>
+            <div class="bar bottom"></div>
+        </div>
+    </div>
+    <main>
+        <nav>
+            <span class="navbar-brand ml-5 h1">Fashion.</span>
+            <div class="nav-right hidden-xs">
+                <div class="button" id="btn">
+                    <div class="bar top"></div>
+                    <div class="bar middle"></div>
+                    <div class="bar bottom"></div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text">
+                    <h4>2021</h4>
+                    <h1> DRESSED TO BE NOTICED.</h1>
+                </div>
+                <div class="col-md-7 rightBox">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img class="img-fluid" src="Assets/image/img1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="Assets/image/img2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="Assets/image/img3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="Assets/image/img4.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="img-fluid" src="Assets/image/img5.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <ul class="sci">
+                        <li><a href="#"><img src="Assets/image/facebook.png" alt=""></a></li>
+                        <li><a href="#"><img src="Assets/image/instagram.png" alt=""></a></li>
+                        <li><a href="#"><img src="Assets/image/twitter.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-1">
+                    <div class="textBox text-center">
+                        <h1>fashion</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 btnBox">
+                    <button type="button" class="btn btn-secondary btn-lg">What's Trending?</button>
+                    <span class="vertical-line"></span>
+                    <button type="button" class="btn btn-secondary btn-lg">GO TO SHOP<i
+                            class="fa fa-angle-right mr-2 ml-3"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="sidebar">
+        <ul class="sidebar-list">
+            <li class="sidebar-item"><a href="#" class="sidebar-anchor">SHOP</a></li>
+            <li class="sidebar-item"><a href="#" class="sidebar-anchor">SALE</a></li>
+            <li class="sidebar-item"><a href="#" class="sidebar-anchor">ABOUT</a></li>
+            <li class="sidebar-item"><a href="#" class="sidebar-anchor">CONTACT</a></li>
+        </ul>
+    </div>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            function toggleSidebar() {
+                $(".button").toggleClass("active");
+                $("main").toggleClass("move-to-left");
+                $(".sidebar-item").toggleClass("active");
+            }
+            $(".button").on("click tap", function () {
+                toggleSidebar();
+            });
+            $(document).keyup(function (e) {
+                if (e.keyCode === 27) {
+                    toggleSidebar();
+                }
+            });
+        });
+    </script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/demo.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

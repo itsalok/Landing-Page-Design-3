@@ -1,0 +1,112 @@
+@import url(//db.onlinewebfonts.com/c/b739b9bc437e5b643a79d7120bf5aec7?family=Neutronica);
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@font-face {
+	font-family:font1;
+	src: url('../font/Neoneon-3zaD6.otf');
+  }
+  @font-face {
+	font-family:font3;
+	src: url('../font/StretchPro.ttf');
+  }
+  @font-face {
+	font-family:font2;
+	src: url('../font/SanMarinoBeach-2OOLW.ttf');
+  }
+
+main {
+	z-index: 2;
+	position: relative;
+	height: 100vh;
+	background-image: url('../image/bg1.jpg');
+	background-size: cover;
+	-webkit-transition: transform .7s ease-in-out;
+	-moz-transition: transform .7s ease-in-out;
+	-ms-transition: transform .7s ease-in-out;
+	-o-transition: transform .7s ease-in-out;
+	transition: transform .7s ease-in-out;
+  }
+
+.text h4{
+	font-size: 40px;
+	color: #fff;
+	font-family: font2;
+	padding-top: 30vh;
+	padding-left: 0.2em;
+}
+.text h1{
+	font-size: 4.5em;
+	color: #fff;
+	font-family: font3;
+	line-height: 1.1em;
+}
+.text h1 span{
+	padding-left: 15%;
+}
+.img-fluid{
+	height: 80vh;	
+}
+.swiper-container {
+	width: 100%;
+	height: 100%;
+	margin-top: -1.3em;
+	margin-left: 28%;
+	background: fixed;
+}
+.swiper-slide {
+	text-align: center;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.textBox h1{
+	font-family: font1;
+	font-size: 7em;
+	color: #fff;
+	transform: rotate(90deg);
+	margin-top: 0.1em;
+	margin-left: 0.9em;
+}
+.sci{
+    position: absolute;
+    top: 82vh;
+    right: -6%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    filter: invert(1);
+    margin: 15px 15px;
+    transform: scale(0.6);
+}
+.btnBox{
+	background-color: #000;
+	height: 11.3vh;
+	padding: 22px 33px;
+}
+.btnBox .btn{
+	background-color: #000 !important;
+	color: #fff;
+	border: none;
+	font-size: 1.1em !important;
+	font-weight: 600;
+}
+.vertical-line{
+    border-left: 3px solid #fff;
+}
